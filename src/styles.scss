@@ -1,0 +1,112 @@
+/* You can add global styles to this file, and also import other style files */
+$th-font-icon-family: Roboto, Helvetica, sans-serif; // th-icon font-family
+$th-font-icon-small: 20px; // th-icon font-size
+$th-font-icon-medium: 30px; // th-icon font-medium
+$th-font-icon-large: 40px; // th-icon font-large
+$th-font-icon-weight: 400; // th-icon font-weight
+
+@font-face {
+  font-family: "fontello";
+  // font-display: auto;
+  src: url("./assets/font/fontello.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[ak-font]:before {
+  font-family: "fontello" !important;
+  content: attr(ak-font);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[data-icon-font]:before {
+  font-family: "fontello" !important;
+  content: attr(data-icon-font);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="akicon-"]:before,
+[class*="akicon-"]:before {
+  font-family: "fontello" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "fontello" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[th-icon] {
+  display: inline-block;
+  font-family: $th-font-icon-family;
+  font-size: $th-font-icon-small;
+  font-style: normal;
+  font-weight: $th-font-icon-weight;
+  letter-spacing: normal;
+  line-height: 1;
+  text-transform: none;
+  word-wrap: normal;
+}
+
+.icon-mail:before {
+  content: "\e800";
+} /* '' */
+.icon-comment:before {
+  content: "\e802";
+} /* '' */
+.icon-menu:before {
+  content: "\e803";
+} /* '' */
+.icon-email:before {
+  content: "\e804";
+} /* '' */
+.icon-quote:before {
+  content: "\e805";
+} /* '' */
+.icon-comment-1:before {
+  content: "\e806";
+} /* '' */
+.icon-twitter:before {
+  content: "\f099";
+} /* '' */
+.icon-linkedin:before {
+  content: "\f0e1";
+} /* '' */
+.icon-quote-left:before {
+  content: "\f10d";
+} /* '' */
+.icon-facebook-official:before {
+  content: "\f230";
+} /* '' */
+
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+}

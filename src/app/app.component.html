@@ -1,0 +1,36 @@
+<section id="header_mob" *ngIf="!this.isDesktop">
+<label class="icon-menu menu"></label>
+<span class="title">COMPANY <span>LOGO</span></span>
+<label class="icon-comment comment"></label>
+</section>
+<section id="header_desktop" *ngIf="this.isDesktop">
+  <div class="left">
+    <span>COMPANY <span>LOGO</span></span>
+  </div>
+  <div class="right">
+    <a>About</a>
+    <a>Services</a>
+    <a>Solutions</a>
+    <a>Blog</a>
+    <a class="getinTouch">
+      <label class="icon-comment"></label>
+      <span>Get In Touch</span>
+    </a>
+  </div>
+</section>
+
+
+<router-outlet></router-outlet>
+
+<section [class.footer_desktop]="this.isDesktop" [class.footer_mob]="!this.isDesktop">
+  <div class="left">
+    <span>&copy; 2017 Company.  All Rights Reserved.</span>
+  </div>
+  <div class="right">
+    <span>Follow us on :</span>
+    <a class="icon-facebook-official"></a>
+    <a class="icon-linkedin"></a>
+    <a class="icon-twitter"></a>
+    <a class="icon-mail"></a>
+  </div>
+</section>
